@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+
+<body>
+    <header>
+        <h1><a href=""><img src="./img/logo_white.png" style="width: 150px; margin-left: 10px;" alt="LOGO"></a></h1>
+        <nav>
+            <ul class="gnb">
+
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <div class="floating-shapes">
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+
+            <div class="container" id="container">
+                <h1 data-text="" class="container_up">Versatile</h1>
+                <h1 data-text="" class="container_down">Designer</h1>
+            </div>
+
+            <div class="text_box">
+                <div class="intro_text text1">Reliability</div>
+                <div class="intro_text text2">A web designer responsible <br>for planning, design, and publishing</div>
+                <div class="intro_text text3">기획, 디자인, 퍼블리싱까지 <br>책임지는 웹 디자이너</div>
+                <div class="intro_text text4">Creative</div>
+                <div class="intro_text text5">Attractive</div>
+                <div class="intro_text text6">Diligence</div>
+            </div>
+
+            <!-- 여러 개의 물방울 -->
+            <div class="drop"
+                style="left: 10%; animation-delay: 0s; background-color: rgb(143, 182, 235);width: 40px; height: 40px;">
+            </div>
+            <div class="drop" style="left: 30%; animation-delay: 1.2s; background-color: rgb(214, 225, 240);"></div>
+            <div class="drop" style="left: 20%; animation-delay: 2.5s; background-color: rgb(119, 171, 230);"></div>
+            <div class="drop" style="left: 70%; animation-delay: 1.8s; background-color: rgb(143, 182, 235);"></div>
+            <div class="drop"
+                style="left: 80%; animation-delay: 3s; background-color: rgb(194, 216, 247);width: 40px; height: 40px;">
+            </div>
+            <div class="drop" style="left: 90%; animation-delay: 0s; background-color: rgb(143, 182, 235);"></div>
+        </section>
+
+
+
+        <!-- about -->
+        <section id="about">
+            <canvas id="canvas"></canvas>
+
+            <div class="container2">
+
+                <div class="about_me_text">About me</div>
+                <div class="about_bubble_img"><img src="./img/bubble.png" alt=""></div>
+
+                <div class="about_left_box">
+                    <div class="left_box_image"><img src="./img/profile_img.png" alt=""></div>
+                    <div class="left_box_right_text_box">
+                        <h1>HONG JI YUN</h1>
+                        <div>디자인부터 퍼블리싱까지 구현하는 웹디자이너</div>
+                        <p><span style="color: #e91e63; font-weight: bold;">♀</span> 2000.02.03</p>
+                        <p><span style="color: #e91e63; font-weight: bold;">☎</span> 010-7191-4506</p>
+
+                        <p>2020.02 - 태릉고등학교 졸업<br>2022.02 - 서일대학교 컴퓨터전자공학과 졸업</p>
+                        <!-- <p>거주지 - 서울특별시 00아파트 000-0000</p> -->
+                    </div>
+                </div>
+
+                <div class="about_right_box">
+                    <!-- <div class="circle1"></div>
+                    <div class="circle2"></div> -->
+                    <img src="./img/morecircle.png" alt="">
+                </div>
+
+
+                <div class="info-box mbti">
+
+                    <div class="title">ISTJ</div>
+                    <div class="content-box">
+                        <span style="font-weight: 600; font-size: 17px; ">현실주의자, 관리자형</span>
+                        <p style="margin-top: 5px;">디테일, 책임감,성실함을 <br>갖춘 현실주의자</p>
+                    </div>
+
+                </div>
+
+                <div class="info-box hobby">
+                    <div class="title">취미</div>
+                    <div class="content-box">요리하기 <br>네일아트하기 <br>일본 미디어 시청 <br>카페에서 작업하기<br>일러스트 드로잉</div>
+                     
+                </div>
+
+                <div class="info-box exp">
+                    <div class="title">경력</div>
+                    <div class="content-box">스마트 UIUX 반응형 웹디자인 수료   <br><br>    2022.07~2023.02<br>
+                    롯데월드 어드벤쳐 게이트 근무<br>
+                    -티켓 판매 및 티켓 확인, 행사 및 정보 안내 <br><br>
+
+                    2024.07~2025.02 <br>
+                    GU 도쿄 긴자점 근무<br>
+                    -면세 담당, 한국인 손님 안내</div>
+              
+                </div>
+
+
+                <div class="info-box certificate">
+                    <div class="title">자격</div>
+                    <div class="content-box">정보처리산업기사<br>
+                    JLPT N2,N3</div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <!-- skill -->
+        <section id="skill">
+            <div class="section_bar section_bar1"></div>
+            <div class="sec_box_c"><img src="./img/bubble.png" alt="">Skill</div>
+
+            <article class="skills_wrap">
+                <div class="skill_wrap">
+                    <h4>Illustrator</h4>
+                    <div class="skill_icon illustrator_icon"><img src="./img/free-icon-illustrator-5968472.png" alt="">
+                    </div>
+                    <div class="skill_box">
+                        <div class="skill_bg">
+                            <div class="skill_bar illustrator">90%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="skill_wrap">
+                    <h4>Photoshop</h4>
+                    <div class="skill_icon photoshop_icon"><img src="./img/free-icon-photoshop-5968520.png" alt="">
+                    </div>
+                    <div class="skill_box">
+                        <div class="skill_bg">
+                            <div class="skill_bar photoshop">85%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill_wrap">
+                    <h4>Figma</h4>
+                    <div class="skill_icon figma_icon"><img src="./img/free-icon-figma-5968705.png" alt=""></div>
+                    <div class="skill_box">
+                        <div class="skill_bg">
+                            <div class="skill_bar figma">95%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill_wrap">
+                    <h4>Github</h4>
+                    <div class="skill_icon github_icon"><img src="./img/free-icon-github-733553.png" alt=""></div>
+                    <div class="github_icon_bg"></div>
+                    <div class="skill_box">
+                        <div class="skill_bg">
+                            <div class="skill_bar github">90%</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="skills_wrap">
+
+                <div class="skill_wrap">
+                    <h4>html5</h4>
+                    <div class="skill_box">
+                        <div class="skill_bg">
+                            <div class="skill_bar html">95%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill_wrap">
+                    <h4>css3</h4>
+                    <div class="skill_box">
+                        <div class="skill_bg">
+                            <div class="skill_bar css">90%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill_wrap">
+                    <h4>JavaScript</h4>
+                    <div class="skill_box">
+                        <div class="skill_bg">
+                            <div class="skill_bar js">85%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill_wrap">
+                    <h4>jQuery</h4>
+                    <div class="skill_box">
+                        <div class="skill_bg">
+                            <div class="skill_bar jq">85%</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="section_bar section_bar2"></div>
+
+        </section>
+
+        <!-- work -->
+        <section id="work">
+            <div class="text">My work <br>
+                <h4>#Figma <br>#Photoshop<br> #Illustrator</h4>
+            </div>
+
+            <div class="work_img img1">
+                <div class="work_img_name">Figma</div><img src="./img/figma_4.png" alt="">
+            </div>
+
+            <div class="work_img img2">
+                <div class="work_img_name">Figma</div><img src="./img/figma_2.png" alt="">
+            </div>
+
+            <div class="work_img img3">
+                <div class="work_img_name">Figma</div><img src="./img/figma_1.png" alt="">
+            </div>
+
+            <div class="work_img img4">
+                <div class="work_img_name">Figma</div><img src="./img/figma_3.png" alt="">
+            </div>
+
+            <div class="work_img img5">
+                <div class="work_img_name">Illustrator</div><img src="./img/Infographic.png" alt="">
+            </div>
+
+            </div>
+
+
+
+        </section>
+
+        <!-- project -->
+        <section id="project">
+            <div class="section_bar section_bar1"></div>
+            <div class="sec_box_c pro_circle">Project</div>
+            <div class="project_box">
+
+                <ul class="project_left">
+
+                    <li class="pro_name">
+                        <div class="project_name">
+                            <h2>ZeroWaste Site</h2>제로웨이스트 사이트 제작
+                        </div>
+                        <div class="project_right_img"><img src="./img/zerowaste_s.png" alt=""></div>
+                    </li>
+                    <li class="pro_name">
+                        <div class="project_name">
+                            <h2>Valorant Site Renewale</h2> 발로란트 사이트 리뉴얼
+                        </div>
+                        <div class="project_right_img"><img src="./img/valorant_s.png" alt=""></div>
+                    </li>
+                    <li class="pro_name">
+                        <div class="project_name">
+                            <h2>Lium Museum Site Renewale</h2>리움미술관 사이트 리뉴얼
+                        </div>
+                        <div class="project_right_img"><img src="./img/leeum_s.png" alt=""></div>
+                    </li>
+                    <li class="pro_name">
+                        <div class="project_name">
+                            <h2>LotteWorld Folk Museum <br>Site Renewale</h2>롯데월드 민속박물관 사이트 리뉴얼
+                        </div>
+                        <div class="project_right_img"><img src="./img/lotteword_s.png" alt=""></div>
+                    </li>
+                </ul>
+
+                <div class="project_right">
+                    <div class="pro_top_box">
+                        <div class="project_right_big_img"><img src="./img/zerowaste.png" alt=""></div>
+                        <div class="project_right_text">
+                            <div>
+                                <p> 첫 개인 프로젝트로서 <br>
+                                    제로웨이스트 사이트 제작</p>
+                                1. 벤치마킹 사이트를 분석<br>
+                                2. 피그마로 레이아웃 제작<br>
+                                3. html과 css를 사용하여 <br>
+                                제로웨이스트 사이트 구현 <br>
+                                -e sport, 공지사항 페이지 제작<br>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="project_right_link_box">
+                        <div class="link_adress"><a href="https://hongjiyun.github.io/zerowaste/" target="_blank">zerowaste site</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="contact">
+
+            <div class="sec_box_c contact_circle"><img src="./img/bubble.png" alt=""></div>
+            <div class="contact_title">Contact</div>
+
+
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./img/logo_no_bg.png" style="width: 400px;" alt="">
+                    </div>
+                    <div class="card-back">
+                        <div class="back_img"><img src="./img/logo_purple.png" style="width: 100px;" alt=""></div>
+
+                        <div class="card_text">
+                            <h2>HONG JI YUN</h2><br>
+                            <p><span style="color: #625ad1; font-weight: bold;">T : </span>010-7191-4506</p><br>
+                            <p><span style="color: #625ad1; font-weight: bold;">M : </span>merjiyun@naver.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+    <footer></footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
