@@ -4,6 +4,8 @@ header {
     height: 60px;
     box-sizing: border-box;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
   }
 
 
@@ -13,19 +15,15 @@ header {
 }
 
 .gnb {
-  position: fixed;      
   left: 0;
-  top: 60px;             
   display: flex;
-  flex-direction: column; 
-  gap:5px;              
+  gap:35px;              
   padding: 20px 44px;  
-  margin-top: 20px;   
+  margin-right: 50px;
 }
 
 
 .gnb > li {
-  width: 80px;
   height: 40px;
   border-radius: 10px;
   margin-top: 7px;
@@ -33,15 +31,10 @@ header {
   display: flex;         
   justify-content: center; 
   align-items: center;  
-    box-shadow: 10px 10px 15px rgba(132, 138, 219, 0.3),
-            -10px -10px 15px rgba(132, 138, 219, 0.3),
-            10px -10px 15px rgba(132, 138, 219, 0.3),
-            -10px 10px 15px rgba(132, 138, 219, 0.3); 
-
 }
 
 .gnb > li > a {
- color: #3a2d72;
+ color: #5846a5;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -78,7 +71,7 @@ body::before {
 	right: 0;
 	bottom: 0;
 	background: radial-gradient(
-		circle 100px at var(--x, 50%) var(--y, 50%),
+		circle 50px at var(--x, 50%) var(--y, 50%),
 		rgba(255, 255, 255, 0.45) 0%,
 		rgba(255, 255, 255, 0.2) 40%,
 		transparent 80%
@@ -102,7 +95,6 @@ body:hover::before {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  color: #3a2d72;
   position: sticky;
   z-index: -11;
   top: 0;
@@ -218,11 +210,11 @@ animation: containerFloat 3s ease-in-out infinite;
 	font-weight: 700;
 	background: linear-gradient(
 		135deg,
-		#b1c5ee 10%,
+		#d9e1f0 10%,
 		#4f6be7 25%,
-		rgb(110, 164, 209) 50%,
-		#ce94f5 40%,
-		#5e5cd8 10%
+		rgb(204, 225, 241) 50%,
+		#e0d5e7 40%,
+		#5846a5 10%
 	);
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -241,45 +233,6 @@ animation: containerFloat 3s ease-in-out infinite;
   50% {
     transform: translateY(10px);
   }
-}
-
-.container>h1::before {
-	content: attr(data-text);
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	background: linear-gradient(
-		135deg,
-		rgba(151, 205, 255, 0.5),  
-        rgba(162, 191, 223, 0.692),  
-        rgba(254, 255, 255, 0.5),
-        rgba(255, 255, 255, 0.5),  
-        rgba(207, 221, 248, 0.5) 
-	);
-
-	transform: translate(4px, 6px);
-	filter: blur(4px);
-}
-
-.container>h1::after {
-	content: attr(data-text);
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -2;
-	background: linear-gradient(
-		135deg,
-	   rgba(219, 241, 255, 0.35),  
-        rgba(255, 255, 255, 0.35),  
-        rgba(226, 232, 255, 0.35),  
-        rgba(239, 248, 255, 0.35),   
-        rgba(237, 237, 255, 0.35)       
-	);
-
-	transform: translate(8px, 10px);
-	filter: blur(8px);
-	opacity: 0.8;
 }
 
 
@@ -319,17 +272,17 @@ animation: containerFloat 3s ease-in-out infinite;
 
 .intro_text {
   position: absolute;
-  color: #3178c6;
+  color: #5846a5;
   font-weight: 500;
   font-size: 20px;
 }
 
 /* 각각 위치 설정 */
 .text1 { top: 25%; left: 18%; font-size: 25px; }
-.text2 { top: 55%; left: 10%; }
-.text3 { top: 35%; left: 74%; text-align: right; }
+.text2 { top: 55%; left: 10%; color: #778df0; }
+.text3 { top: 35%; left: 74%; text-align: right; color: #778df0;}
 .text4 { top: 73%; left: 35%; font-size: 25px;}
-.text5 { bottom: 20%; right: 30%; font-size: 25px;}
+.text5 { bottom: 20%; right: 30%; font-size: 25px; color: #778df0;}
 .text6 { top: 60%; right: 10%; font-size: 25px;}
 
 
@@ -396,7 +349,7 @@ animation: containerFloat 3s ease-in-out infinite;
   left: 20%;
   font-size: 110px;
   font-weight: 700;
-  color: #3a2d72;
+  color: #5846a5;
 }
 
 
@@ -552,41 +505,46 @@ margin-bottom: 10px;
 }
 
 /* 개별 위치 및 높이 */
+
+.certificate {
+  top: 22%;
+  right: 20%;
+  width: 150px;
+  height: 150px;
+  background-color:rgb(255, 255, 255);
+  box-shadow: 0 0 30px rgba(86, 128, 245, 0.7);
+}
+
 .mbti {
-  top: 20%;
-  left: 60%;
+  top: 38%;
+  right: 12%;
   width: 190px;
   height: 190px;
   background-color:rgb(255, 255, 255);
   box-shadow: 0 0 30px rgba(86, 128, 245, 0.7);
 }
 
+.exp {
+  bottom: 40%;
+  right: 25%;
+  width: 300px;
+  height: 300px;
+  background-color:rgb(255, 255, 255);
+  box-shadow: 0 0 30px rgba(86, 128, 245, 0.7);
+
+}
+
 .hobby {
-  bottom: 20%;
-  right: 26%;
+  bottom: 24%;
+  right: 18%;
   width: 200px;
   height: 200px;
   background-color:rgb(255, 255, 255);
   box-shadow: 0 0 30px rgba(86, 128, 245, 0.7);
 }
 
-.exp {
-  bottom: 27%;
-  right: 10%;
-  width: 300px;
-  height: 300px;
-  background-color:rgb(255, 255, 255);
-  box-shadow: 0 0 30px rgba(226, 90, 253, 0.7);
-}
 
-.certificate {
-  top: 10%;
-  right: 13%;
-  width: 150px;
-  height: 150px;
-  background-color:rgb(255, 255, 255);
-  box-shadow: 0 0 30px rgba(86, 128, 245, 0.7);
-}
+
 
 
 
@@ -595,8 +553,7 @@ margin-bottom: 10px;
 #skill {
   width: 100%;
   height: 900px;    
-  background-image: url('../img/background1.png');
-  background-repeat: no-repeat;
+  background-color: #fff;
   box-sizing: border-box;   
   padding-top: 350px;
   position: relative;
@@ -637,7 +594,7 @@ box-shadow:
   border-radius: 50%;
   position: absolute;
   top: -14%;
-  left: 10%;
+  left: 45%;
   display: flex;
   align-items: center;   
   justify-content: center; 
@@ -647,7 +604,7 @@ box-shadow:
   box-sizing: border-box;
   background: #fff;
   overflow: hidden; 
-  color: #3a2d72;
+  color: #5846a5;
 
 
 }
@@ -924,18 +881,17 @@ width: 100%;
   justify-content: center;
   align-items: center;
   z-index: 20;
-  background-image: url('../img/background_g.png');
-
+background-color: #fff;
  
 
 }
 
 
 .pro_name{
- box-shadow: 8px 8px 8px rgba(132, 138, 219, 0.3),
-            -8px -8px 8px rgba(132, 138, 219, 0.3),
-            8px -8px 8px rgba(47, 57, 187, 0.3),
-            -8px 8px 8px rgba(132, 138, 219, 0.3);
+ box-shadow: 5px 5px 5px rgba(132, 138, 219, 0.3),
+            -5px -5px 5px rgba(132, 138, 219, 0.3),
+            5px -5px 5px rgba(47, 57, 187, 0.3),
+            -5px 5px 5px rgba(132, 138, 219, 0.3);
 }
 
 
@@ -983,11 +939,13 @@ width: 100%;
   border-right: none;
   padding: 50px 50px;
   box-sizing: border-box;
-  background-image: url('../img/background2.png');
-   box-shadow: 8px 8px 8px rgba(255, 255, 255, 0.3),
-            -8px -8px 8px rgba(255, 255, 255, 0.3),
-            8px -8px 8px rgba(255, 255, 255, 0.3),
-            -8px 8px 8px rgba(255, 255, 255, 0.3);
+  background-color: #fff;
+ box-shadow: 5px 5px 5px rgba(132, 138, 219, 0.3),
+            -5px -5px 5px rgba(132, 138, 219, 0.3),
+            5px -5px 5px rgba(47, 57, 187, 0.3),
+            -5px 5px 5px rgba(132, 138, 219, 0.3);
+
+
 }
 
 
