@@ -221,7 +221,7 @@ $(document).ready(function () {
     });
   }
 
-  // ✨ 여러 섹션에 적용
+  // 여러 섹션에 적용
   initInkEffect("about");
   initInkEffect("work");
 
