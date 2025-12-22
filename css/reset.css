@@ -21,6 +21,10 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	user-select: none; /* 드래그 금지 */
+  -webkit-user-select: none; /* 사파리/크롬 브라우저 대응 */
+  -moz-user-select: none; /* 파이어폭스 대응 */
+  -ms-user-select: none; /* IE/엣지 대응 */
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -30,7 +34,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1.5;
 }
-ol, ul {
+ol, ul,li {
 	list-style: none;
 }
 blockquote, q {
